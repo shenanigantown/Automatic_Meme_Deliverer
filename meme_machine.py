@@ -9,7 +9,7 @@ import sys
 import random
 
 library_of_memes = ['MEME\nmeme',
-                    'What the fuck did you just fucking say about me, you '
+                    'What the fuck did you just fucking say about me,\nyou '
                     'little bitch? I’ll have you know I graduated top of my '
                     'class in the Navy Seals, and I’ve been involved in '
                     'numerous secret raids on Al-Quaeda, and I have over 300 '
@@ -46,7 +46,10 @@ library_of_memes = ['MEME\nmeme',
                     "is one of my favorite characters.",
                         
                     "Just so you guys know:\nThis is the first thing that "\
-                    "I've used my coding for other than school or work"
+                    "I've used my coding for other than school or work",
+
+                    "Your Daily Dose of Validation\nI care about you and "
+                    "think you're a rad person with lots of creative talent"
                     ]
 
 def meme_selector():
