@@ -9,6 +9,7 @@ import sys
 import random
 
 library_of_memes = ['MEME\nmeme',
+
                     'What the fuck did you just fucking say about me,\nyou '
                     'little bitch? I’ll have you know I graduated top of my '
                     'class in the Navy Seals, and I’ve been involved in '
@@ -37,15 +38,15 @@ library_of_memes = ['MEME\nmeme',
                     'you didn’t, and now you’re paying the price, you goddamn '
                     'idiot. I will shit fury all over you and you will drown '
                     'in it. You’re fucking dead, kiddo.',
-                        
-                    "I just want to reblog this and stress this\nLevi "\
-                    "his entire squad. He didn't lose 20% of his squad. "\
-                    "He didn't even lose 50%. He lost his whole squad. "\
-                    "Look at what it's done to him. You can see the death "\
-                    "in his eyes, but he keeps on going. This is why Levi "\
+ 
+                    "I just want to reblog this and stress this\nLevi "
+                    "his entire squad. He didn't lose 20% of his squad. "
+                    "He didn't even lose 50%. He lost his whole squad. "
+                    "Look at what it's done to him. You can see the death "
+                    "in his eyes, but he keeps on going. This is why Levi "
                     "is one of my favorite characters.",
                         
-                    "Just so you guys know:\nThis is the first thing that "\
+                    "Just so you guys know:\nThis is the first thing that "
                     "I've used my coding for other than school or work",
 
                     "Your Daily Dose of Validation\nI care about you and "
