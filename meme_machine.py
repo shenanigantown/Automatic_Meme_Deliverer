@@ -8,53 +8,41 @@ import smtplib
 import sys
 import random
 
-library_of_memes = ['MEME\nmeme',
+library_of_memes = ['MEMEmeme',
 
-                    'What the fuck did you just fucking say about me,\nyou '
-                    'little bitch? I’ll have you know I graduated top of my '
-                    'class in the Navy Seals, and I’ve been involved in '
-                    'numerous secret raids on Al-Quaeda, and I have over 300 '
-                    'confirmed kills. I am trained in gorilla warfare and I’m '
-                    'the top sniper in the entire US armed forces. You are '
-                    'nothing to me but just another target. I will wipe you '
-                    'the fuck out with precision the likes of which has never '
-                    'been seen before on this Earth, mark my fucking words. '
-                    'You think you can get away with saying that shit to me '
-                    'over the Internet? Think again, fucker. As we speak I am '
-                    'contacting my secret network of spies across the USA and '
-                    'your IP is being traced right now so you better prepare '
-                    'for the storm, maggot. The storm that wipes out the '
-                    'pathetic little thing you call your life. You’re fucking '
-                    'dead, kid. I can be anywhere, anytime, and I can kill '
-                    'you in over seven hundred ways, and that’s just with '
-                    'my bare hands. Not only am I extensively trained in '
-                    'unarmed combat, but I have access to the entire arsenal '
-                    'of the United States Marine Corps and I will use it to '
-                    'its full extent to wipe your miserable ass off the face '
-                    'of the continent, you little shit. If only you could '
-                    'have known what unholy retribution your little “clever” '
-                    'comment was about to bring down upon you, maybe you '
-                    'would have held your fucking tongue. But you couldn’t, '
-                    'you didn’t, and now you’re paying the price, you goddamn '
-                    'idiot. I will shit fury all over you and you will drown '
-                    'in it. You’re fucking dead, kiddo.',
- 
-                    "I just want to reblog this and stress this\nLevi "
-                    "his entire squad. He didn't lose 20% of his squad. "
-                    "He didn't even lose 50%. He lost his whole squad. "
-                    "Look at what it's done to him. You can see the death "
-                    "in his eyes, but he keeps on going. This is why Levi "
-                    "is one of my favorite characters.",
-                        
-                    "Just so you guys know:\nThis is the first thing that "
-                    "I've used my coding for other than school or work",
+                    "Greetings Earthings! I have come to tell you that you, ,, "
+                    "are very cool,, ,,, and do cool things.... I have come "
+                    "all the way from space to tell you this,,....",
 
-                    "Your Daily Dose of Validation\nI care about you and "
-                    "think you're a rad person with lots of creative talent"
+                    "BODE",
+
+                    "If you would like to submit a meme of your own, please "
+                    "email 247mememachine@gmail.com and it will be placed "
+                    "under review. ",
+
+                    "This is meme number 4.",
+
+                    "I want y'all to know that this is the first project I've"
+                    " done outside of class",
+
+                    "I hope you are enjoying this exercise in meme production, "
+                    "and that I have been able to contribute to the growth of "
+                    "the memeconomy like a good citizen",
+
+                    "Your Daily Dose of Validation! You are a rad person with"
+                    " lots of creative talent and great potential!",
+
+                    "Your Daily Dose of Validation! I care about you and hope"
+                    " that you always have abundant memes and good pets!",
+
+                    "Tis I, the frenchiest fry",
+
+                    "Cars are tasty"
                     ]
-
 def meme_selector():
-    return library_of_memes[random.randint(0, len(library_of_memes) - 1)]
+    meme = library_of_memes[random.randint(0, len(library_of_memes) - 1)]
+    print meme
+    return meme
 
 
 def main():
@@ -80,12 +68,12 @@ def main():
 
 
     psswd = raw_input("Enter my password, please? ")
-    meme_machine.login('247mememachine@gmail.com', psswd)
+    meme_machine.login("247mememachine@gmail.com", psswd)
 
-    meme_machine.sendmail('247mememachine@gmail.com',
-                          '247mememachine@gmail.com', # TODO Replace
-                          'Subject: ' + meme_selector())
-    print('Message sent. Exiting')
+    meme_machine.sendmail("247mememachine@gmail.com",
+                          "", # TODO Insert recipients
+                          "Subject: \n" + meme_selector())
+    print("Message sent. Exiting")
     meme_machine.quit()
 
 
