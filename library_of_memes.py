@@ -3,7 +3,7 @@
 
 The messages that meme_selector chooses from to send.
 """
-library_of_memes = ['MEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmeme',
+library_of_memes = ['MEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmeme', 
 
                     "Greetings Earthings! I have come to tell you that you, ,, "
                     "are very cool,, ,,, and do cool things.... I have come "
@@ -42,5 +42,18 @@ library_of_memes = ['MEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmeme',
                     " something like that.",
 
                     "Your Daily Dose of Validation! Your hair looks"
-                    " fantastic. Honestly. Like wow."
+                    " fantastic. Honestly. Like wow.",
+
+                    "Your Daily Dose of Validation! You may be a little bit "
+                    "of a furry but it's okay, we love you anyway.",
+
+                    "Please. Please submit memes. Or you're gonna get tired "
+                    "of this really quickly.",
+
+                    "The moon loves you",
+
+                    "If you have any complaints about the meme machine, "
+                    "please go outside and explain them to the nearest plant."
+                    " They will make sure your comments are heard."
+
                     ]
