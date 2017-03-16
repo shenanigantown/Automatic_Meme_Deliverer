@@ -54,6 +54,14 @@ library_of_memes = ['MEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmeme',
 
                     "If you have any complaints about the meme machine, "
                     "please go outside and explain them to the nearest plant."
-                    " They will make sure your comments are heard."
+                    " They will make sure your comments are heard.",
+
+                    "O shit waddup",
+
+                    "You are are more loved than you realize. People look up "
+                    "to you, whether you see it or not.",
+
+                    "You are good at your skills/crafts and no one can take "
+                    "that from you. You outshine many and improve every day!"
 
                     ]
