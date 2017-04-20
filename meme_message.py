@@ -4,11 +4,10 @@ validation and endless memes.
 """
 
 
+import random
 import smtplib
 import sys
-import random
-
-import library_of_memes as memelib
+import time
 
 def read_recipients(filename):
     recipients = []
@@ -50,9 +49,21 @@ def main(): # TODO Proper documentation for functions
     with open(cur_directory + sys.argv[3], "r") as sndr:
         sender = sndr.read().strip();
 
+    with open(cur_directory + sys.argv[4], "r") as message:
+        msg = message.read().strip();
+
+    n = 155;
+    to_send = [msg[i:i+n]for i in range(0, len(msg), n)]
+
+
+    for part in to_send:
+        for address in recipients:
+            meme_machine.sendmail(sender, address, "Subject: \n" + part);
+            time.sleep(2);
+
     for address in recipients:
-        meme_machine.sendmail(sender, address, "Subject: \n" + memelib.meme_selector())
-    
+        meme_machine.sendmail(sender, address, "Subject: \n" + )
+
     meme_machine.quit()
 
 

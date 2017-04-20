@@ -1,8 +1,15 @@
 """Caitlyn Cook
 247mememachine@gmail.com
 
-The messages that meme_selector chooses from to send.
+The messages that meme_selector chooses from to send and a function to
+select a random meme from the list.
 """
+
+def meme_selector():
+    meme = library_of_memes[random.randint(0,
+                                    len(library_of_memes) - 1)]
+    return meme
+
 library_of_memes = ['MEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmeme', 
 
                     "Greetings Earthings! I have come to tell you that you, ,, "
