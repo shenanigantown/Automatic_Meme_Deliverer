@@ -62,6 +62,8 @@ library_of_memes = ['MEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmeme',
                     "to you, whether you see it or not.",
 
                     "You are good at your skills/crafts and no one can take "
-                    "that from you. You outshine many and improve every day!"
+                    "that from you. You outshine many and improve every day!",
+
+                    "You tunch, I punch."
 
                     ]

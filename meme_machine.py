@@ -23,18 +23,14 @@ def read_recipients(filename):
 
     return recipients
 
-def main():
-    recipients = read_recipients( # TODO Make this path more general
-            "/home/caitlyn/Projects/Automatic_Meme_Deliverer/recipients.txt")
-
-    meme_machine = smtplib.SMTP('smtp.gmail.com', 587)
-
-    # TODO Separate into other functions
+def meme_ehlo(meme_machine):
     hello = meme_machine.ehlo()
     if hello[0] != 250:
         print("Ehlo failed. Exiting.")
         meme_machine.quit()
         sys.exit()
+
+def meme_tls(meme_machine):
     tls = meme_machine.starttls()
     if tls[0] != 220:
         print("TLS failed. Exiting.")
@@ -42,14 +38,25 @@ def main():
         sys.exit()
 
 
-    psswd = raw_input() # TODO Should standardize input. Read or redirected
+def main(): # TODO Proper documentation for functions
+    # TODO Make path more general
+    cur_directory = "/home/caitlyn/Projects/Automatic_Meme_Deliverer/";
+    recipients = read_recipients(cur_directory + sys.argv[2])
+
+    meme_machine = smtplib.SMTP('smtp.gmail.com', 587)
+
+    meme_ehlo(meme_machine);
+    meme_tls(meme_machine);
+
+    with open(cur_directory + sys.argv[1], "r") as pss:
+        psswd = pss.read().strip()
     meme_machine.login("247mememachine@gmail.com", psswd)
 
-    # TODO Generalize sending address, while you're at it
+    with open(cur_directory + sys.argv[3], "r") as sndr:
+        sender = sndr.read().strip();
 
     for address in recipients:
-        meme_machine.sendmail("247mememachine@gmail.com",
-                            address, "Subject: \n" + meme_selector())
+        meme_machine.sendmail(sender, address, "Subject: \n" + meme_selector())
     
     meme_machine.quit()
 

@@ -1,0 +1,5 @@
+password.txt
+recipients.txt
+sender.txt
+
+*.pyc
