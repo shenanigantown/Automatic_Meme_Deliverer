@@ -4,6 +4,7 @@
 The messages that meme_selector chooses from to send and a function to
 select a random meme from the list.
 """
+import random
 
 def meme_selector():
     meme = library_of_memes[random.randint(0,
@@ -71,6 +72,8 @@ library_of_memes = ['MEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmemeMEMEmeme',
                     "You are good at your skills/crafts and no one can take "
                     "that from you. You outshine many and improve every day!",
 
-                    "You tunch, I punch."
+                    "You tunch, I punch.",
+
+                    "What in meme automation??"
 
                     ]
